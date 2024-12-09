@@ -1,0 +1,247 @@
+@use '../utils' as *;
+
+/*=============================
+    	08. History
+===============================*/
+.history {
+    &__area {
+        &-two {
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -300px;
+                top: -200px;
+                width: 560px;
+                height: 560px;
+                @include border-radius(50%);
+                background: #FF7438;
+                filter: blur(150px);
+                opacity: .1;
+                z-index: -1;
+            }
+        }
+    }
+    &__img-wrap {
+        position: relative;
+        z-index: 1;
+        text-align: right;
+        padding-bottom: 50px;
+        margin-right: -45px;
+        @media #{$lg} {
+            padding-left: 90px;
+        }
+        @media #{$md} {
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+        @media #{$xs} {
+            padding: 0;
+            text-align: center;
+        }
+        & > img {
+            &:nth-child(1) {
+                @include border-radius(20px);
+            }
+            &:nth-child(2) {
+                @include border-radius(15px);
+                border: 9px solid var(--tg-color-white-default);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+            &.shape {
+                position: absolute;
+                left: 0;
+                top: 10%;
+                z-index: -1;
+                @media #{$lg} {
+                    max-width: 80px;
+                }
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+        }
+        &-two {
+            position: relative;
+            text-align: right;
+            margin: 0 10px 0 40px;
+            padding: 70px 0 70px 80px;
+            z-index: 1;
+            @media #{$lg} {
+                margin: 0 30px 0 0;
+                padding: 70px 0 70px 50px;
+            }
+            @media #{$md} {
+                margin-bottom: 50px;
+            }
+            @media #{$xs} {
+                padding: 30px 0 30px 20px;
+                margin-right: 0;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 80%;
+                height: 100%;
+                background: var(--tg-color-white-default);
+                @include border-radius(20px 20px 20px 107px);
+                z-index: -1;
+                @media #{$xs} {
+                    @include border-radius(20px 20px 20px 50px);
+                }
+            }
+            & > img {
+                @include border-radius(30px);
+                @media #{$xs} {
+                    @include border-radius(20px);
+                }
+            }
+            & .shape {
+                & img {
+                    position: absolute;
+                    &:nth-child(1) {
+                        @include border-radius(15px);
+                        right: -10%;
+                        bottom: 8%;
+                        border: 1px solid #D0D4E7;
+                        @media #{$xs} {
+                            max-width: 180px;
+                        }
+                        @media #{$sm} {
+                            max-width: 220px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        right: -12%;
+                        top: 0%;
+                        @media #{$lg} {
+                            right: -11%;
+                            top: 5%;
+                            max-width: 80px;
+                        }
+                        @media #{$xs} {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__content {
+        margin-left: 75px;
+        @media #{$xl} {
+            margin-left: 55px;
+        }
+        @media #{$lg} {
+            margin-left: 48px;
+        }
+        @media #{$md} {
+            margin-left: 0;
+        }
+        & p {
+            margin-bottom: 35px;
+        }
+        &-two {
+            margin-right: 75px;
+            @media #{$lg} {
+                margin-right: 0;
+            }
+            & > p {
+                font-size: 18px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+.satisfied__clients-wrap {
+    background: var(--tg-color-white-default);
+    @include border-radius(10px);
+    position: absolute;
+    left: 37%;
+    bottom: 20%;
+    text-align: left;
+    padding: 15px 25px;
+    & span {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+}
+
+.progress {
+    &__wrap {
+        overflow: hidden;
+    }
+    &__item {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & .title {
+            margin-bottom: 12px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        & .progress {
+            height: 8px;
+            background-color: var(--tg-color-gray-3);
+            border-radius: 8px;
+            overflow: inherit;
+            &-bar {
+                background: var(--tg-color-gradient);
+                position: relative;
+                overflow: inherit;
+                border-radius: 8px;
+                & span {
+                    display: block;
+                    position: absolute;
+                    right: 3px;
+                    bottom: 20px;
+                    color: var(--tg-color-white-default);
+                    line-height: 1;
+                    font-weight: 600;
+                    font-size: 11px;
+                    border-radius: 2px;
+                    background: var(--tg-theme-secondary);
+                    padding: 4px 5px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: -5px;
+                        width: 8px;
+                        height: 8px;
+                        background: var(--tg-theme-secondary);
+                        clip-path: polygon(100% 0, 0 0, 100% 100%);
+                    }
+                }
+            }
+        }
+        &-two {
+            & .title {
+                color: var(--tg-color-white-default);
+            }
+            & .progress {
+                &-bar {
+                    & span {
+                        color: var(--tg-heading-color);
+                        background: var(--tg-color-white-default);
+                        &::before {
+                            background: var(--tg-color-white-default);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
