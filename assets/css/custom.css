@@ -1,0 +1,5 @@
+.custom-popover {
+    max-width: 400px; /* Adjust as needed */
+    font-size: 14px;  /* Optional for better readability */
+    white-space: normal; /* Ensures text wraps properly */
+  }
