@@ -3,3 +3,71 @@
     font-size: 14px;  /* Optional for better readability */
     white-space: normal; /* Ensures text wraps properly */
   }
+
+  .about-description-block{padding: 80px 0;}
+
+  .about-description-block .about-container {
+    width: 100%;
+    max-width: 1580px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
+}
+
+.about-description-block .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description-block .flex .image {width: 38%}
+
+.about-description-block .flex .about-content {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* stats */
+
+
+.about-stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.stats-box {
+  margin-bottom: 20px;
+}
+
+.text_blue {
+  color: #004aad;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stats-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column; /* Stack content for smaller screens */
+  }
+  .image {
+    margin-bottom: 20px;
+  }
+}
