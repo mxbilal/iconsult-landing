@@ -1,17 +1,19 @@
 .custom-popover {
-    max-width: 400px; /* Adjust as needed */
-    font-size: 14px;  /* Optional for better readability */
-    white-space: normal; /* Ensures text wraps properly */
-  }
+  max-width: 400px; /* Adjust as needed */
+  font-size: 14px; /* Optional for better readability */
+  white-space: normal; /* Ensures text wraps properly */
+}
 
-  .about-description-block{padding: 80px 0;}
+.about-description-block {
+  padding: 80px 0;
+}
 
-  .about-description-block .about-container {
-    width: 100%;
-    max-width: 1580px;
-    margin: 0 auto;
-    position: relative;
-    padding: 0 10px;
+.about-description-block .about-container {
+  width: 100%;
+  /* max-width: 1580px; */
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px;
 }
 
 .about-description-block .flex {
@@ -19,7 +21,9 @@
   justify-content: space-between;
 }
 
-.about-description-block .flex .image {width: 38%}
+.about-description-block .flex .image {
+  width: 38%;
+}
 
 .about-description-block .flex .about-content {
   width: 58%;
@@ -31,11 +35,10 @@
 
 /* stats */
 
-
 .about-stats-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 50px;
 }
 
 .stats-box {
