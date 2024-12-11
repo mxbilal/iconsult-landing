@@ -73,4 +73,10 @@ ul li {
   .image {
     margin-bottom: 20px;
   }
+  .about-description-block .flex .image {
+    width: 100%;
+  }
+  .about-description-block .flex .about-content {
+    width: 100%
+  }
 }

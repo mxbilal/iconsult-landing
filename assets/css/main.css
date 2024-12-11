@@ -1165,14 +1165,24 @@ textarea {
   line-height: 1;
   color: var(--tg-color-white-default);
 }
+.breadcrumb__content .about-top-content{
+  color: white;
+  width: 100%;
+}
 @media (max-width: 1199.98px) {
   .breadcrumb__content .title {
     font-size: 36px;
+  }
+  .breadcrumb__content .about-top-content{
+   /* width: 70%; */
   }
 }
 @media (max-width: 767.98px) {
   .breadcrumb__content .title {
     font-size: 34px;
+  }
+  .breadcrumb__content .about-top-content{
+    width: 100%;
   }
 }
 .breadcrumb__content .breadcrumb {
@@ -5553,7 +5563,9 @@ textarea {
   .about__list-box-item {
     padding: 29px 24px;
     gap: 17px;
+    flex-direction: column;
   }
+  .about__list-box-item .content{width: 100% !important; text-align: center;}
 }
 .about__list-box-item:last-child {
   margin-bottom: 0;
