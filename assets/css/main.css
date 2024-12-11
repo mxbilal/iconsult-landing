@@ -3400,7 +3400,7 @@ textarea {
 .banner__content p {
   margin-bottom: 22px;
   font-size: 18px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   width: 85%;
 }
 @media (max-width: 1199.98px) {
