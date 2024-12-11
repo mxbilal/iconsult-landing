@@ -6249,6 +6249,9 @@ textarea {
 .section-py-130 {
   padding: 130px 0;
 }
+.py-20 {
+  padding: 40px 0;
+}
 @media (max-width: 767.98px) {
   .section-py-130 {
     padding: 100px 0;
