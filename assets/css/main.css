@@ -9861,14 +9861,16 @@ textarea {
   position: relative;
   z-index: 1;
 }
+
 @media (max-width: 767.98px) {
-  .team__area .swiper-slide {
-    width: 100% !important; /* Ensure full width for mobile view */
-    display: flex;
-    justify-content: center;
+.team__area .swiper-slide {
+  width: 100% !important; 
+  /* display: flex;
+  align-items: center;
+  overflow: hidden;  */
+}
 }
 
-}
 .team__area-two::before {
   content: "";
   position: absolute;

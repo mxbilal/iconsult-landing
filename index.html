@@ -1874,8 +1874,8 @@
     
     <script>
         var swiper = new Swiper('.team-active', {
-            slidesPerView: 4, // Default to 4 slides at a time
-            spaceBetween: 30, // Default space between slides
+            slidesPerView: 4, // Default number of slides per view
+            spaceBetween: 30, // Space between slides
             loop: true, // Enable looping
             autoplay: {
                 delay: 3000, // Delay between auto-scrolls
@@ -1885,24 +1885,56 @@
                 nextEl: '.swiper-button-next', // Next button selector
                 prevEl: '.swiper-button-prev', // Previous button selector
             },
-            centeredSlides: false, // Disable centering slides by default
-            centerInsufficientSlides: true, // Center slides when fewer than the default
             breakpoints: {
                 1024: {
                     slidesPerView: 3, // Show 3 slides on tablets
-                    spaceBetween: 20,
+                    spaceBetween: 30, // Space between slides on tablets
                 },
                 768: {
-                    slidesPerView: 2, // Show 2 slides on smaller tablets
-                    spaceBetween: 15,
+                    slidesPerView: 1, // Show 2 slides on small screens
+                    spaceBetween: 10, // Adjust space between slides for small screens
                 },
                 576: {
-                    slidesPerView: 1, // Show 1 slide on mobile
-                    spaceBetween: 0, // Remove spacing for single-slide view
-                    centeredSlides: true, // Center slides for mobile
+                    slidesPerView: 1, // Show 1 slide on extra small screens
+                    spaceBetween: 0, // Remove space between slides for mobile
                 },
             },
         });
+    </script>
+    <!-- <script>
+var swiper = new Swiper('.team-active', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 300,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 10, // Adjust space between slides for better smoothness on mobile
+        },
+    },
+    touchRatio: 1,  // Increase this for better swipe sensitivity
+    freeMode: true,  // Enable free mode for smoother scrolling
+    speed: 500,      // Set a smoother transition speed for the slides
+    slidesPerGroup: 1,  // Move slides one by one
+    centeredSlides: true,  // Center the active slide on mobile
+}); -->
+
     </script>
     
     <!-- JS here -->
