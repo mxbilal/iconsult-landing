@@ -9980,7 +9980,7 @@ textarea {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-.team__item-three:hover .team__thumb-three img {
+.team__item-three:hover .team__shape img {
   filter: grayscale(0);
 }
 .team__item-four {
@@ -10147,6 +10147,7 @@ textarea {
   line-height: 1;
   color: var(--tg-theme-primary);
 }
+.team__content-three {min-height: 100px;}
 .team__content-three .title {
   margin-bottom: 8px;
   font-size: 24px;
