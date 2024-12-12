@@ -643,8 +643,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="  swiper-container team-active fix">
-                    <div class="  swiper-wrapper">
+                <div class="swiper-container team-active fix">
+                    <div class="swiper-wrapper team-container ">
                         <!-- Team Member 1 -->
                         <div class="swiper-slide">
                             <div class="team__item-three">
@@ -1874,8 +1874,8 @@
     
     <script>
         var swiper = new Swiper('.team-active', {
-            slidesPerView: 5, // Show 4 slides at a time
-            spaceBetween:30, // Space between slides
+            slidesPerView: 4, // Default to 4 slides at a time
+            spaceBetween: 30, // Default space between slides
             loop: true, // Enable looping
             autoplay: {
                 delay: 3000, // Delay between auto-scrolls
@@ -1885,24 +1885,26 @@
                 nextEl: '.swiper-button-next', // Next button selector
                 prevEl: '.swiper-button-prev', // Previous button selector
             },
+            centeredSlides: false, // Disable centering slides by default
+            centerInsufficientSlides: true, // Center slides when fewer than the default
             breakpoints: {
                 1024: {
-                    slidesPerView: 4, // Show 3 slides on tablets
+                    slidesPerView: 3, // Show 3 slides on tablets
+                    spaceBetween: 20,
                 },
                 768: {
-                    slidesPerView: 2, // Show 2 slides on small screens
+                    slidesPerView: 2, // Show 2 slides on smaller tablets
+                    spaceBetween: 15,
                 },
                 576: {
-                    slidesPerView: 1, // Show 1 slide on extra small screens
+                    slidesPerView: 1, // Show 1 slide on mobile
+                    spaceBetween: 0, // Remove spacing for single-slide view
+                    centeredSlides: true, // Center slides for mobile
                 },
             },
         });
     </script>
-
-
-
-
-
+    
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
