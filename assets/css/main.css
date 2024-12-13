@@ -6017,7 +6017,7 @@ textarea {
 }
 @media (max-width: 767.98px) {
   .profit__wrap {
-    display: none;
+    /* display: none; */
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
