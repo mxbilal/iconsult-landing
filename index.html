@@ -1873,33 +1873,38 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     
     <script>
-        var swiper = new Swiper('.team-active', {
-            slidesPerView: 4, // Default number of slides per view
-            spaceBetween: 30, // Space between slides
-            loop: true, // Enable looping
-            autoplay: {
-                delay: 3000, // Delay between auto-scrolls
-                disableOnInteraction: false, // Continue autoplay after user interaction
-            },
-            navigation: {
-                nextEl: '.swiper-button-next', // Next button selector
-                prevEl: '.swiper-button-prev', // Previous button selector
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 3, // Show 3 slides on tablets
-                    spaceBetween: 30, // Space between slides on tablets
-                },
-                768: {
-                    slidesPerView: 1, // Show 2 slides on small screens
-                    spaceBetween: 10, // Adjust space between slides for small screens
-                },
-                576: {
-                    slidesPerView: 1, // Show 1 slide on extra small screens
-                    spaceBetween: 0, // Remove space between slides for mobile
-                },
-            },
-        });
+       var swiper = new Swiper('.team-active', {
+    slidesPerView: 4, // Default for large screens
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+    },
+});
+
     </script>
     <!-- <script>
 var swiper = new Swiper('.team-active', {

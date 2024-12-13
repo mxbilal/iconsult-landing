@@ -9863,13 +9863,14 @@ textarea {
 }
 
 @media (max-width: 767.98px) {
-.team__area .swiper-slide {
-  width: 100% !important; 
-  /* display: flex;
-  align-items: center;
-  overflow: hidden;  */
+  /* .swiper-slide {
+    width: 100% !important; 
+  }
+  .team-container{
+    width: 100%;
+  } */
 }
-}
+
 
 .team__area-two::before {
   content: "";
