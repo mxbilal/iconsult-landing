@@ -5053,6 +5053,7 @@ textarea {
   .about__img-wrap .shape img:nth-child(1) {
     left: -4%;
     top: 38%;
+    display: none;
   }
 }
 .about__img-wrap .shape img:nth-child(2) {
